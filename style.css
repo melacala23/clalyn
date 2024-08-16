@@ -1,16 +1,14 @@
-
-
 :root{
-    --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
+    --cor-de-fundo: #d35570;
+    --branco: pink;
     --laranja:#EB9B00;
     --azul-degrade:linear-gradient(97 .54deg,   #002f52 35.49%, #326589 165.37%);
-    --fonte-principal: "Poppins";
+    --fonte-principal: "Moderustic";
     --azul:  #002F52;
 }
 
-body {
-    background-color: var(--cor-de-fundo);
+.body {
+    background-color:(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font: 16px;
     font-weight: 400;
@@ -19,13 +17,13 @@ body {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: ;
+    background-image:url() ;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .cabecalho{
-    background-color: var(--branco);
+    background-color: var(--cor-de-fundo);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -77,6 +75,6 @@ display: block;
  
 .banner {
     background: var(--azul-degrade);
-    color:var(--branco)
-    text-aling:
+    color:var(--branco);
+    text-align: center;
 }
