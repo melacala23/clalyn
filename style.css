@@ -98,7 +98,7 @@ display: block;
      background: url()no-repeat;
      background-position: 1em;
 }
-carrossel__titulo{
+.carrossel__titulo{
     color: var(--laranja);
     background-color: var(--branco);
     text-align: center;
