@@ -10,6 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+ const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: { 
+      el: ".swiper-pagination",
+      type: "bullets",
+        },
+});
+</script>
+
 </head>
 <body>
     <header class="cabecalho">
@@ -49,20 +66,22 @@
         <p class="banner_texto">Encontre em nossa estante livros para se apaixonar!</p>
         <input type="search" class="banner_pesquisa"  placeholder="Qual será sua próxima leitura?">
     </section>
-    <section class="corrosel">
-        <h2 class="carrosel_titulo">NOVOS LANÇAMENTOS</h2>
-        <!--Slider main contair-->
+    <section class="corrossel">
+        <h2 class="carrossel__titulo">NOVOS LANÇAMENTOS</h2>
+        <!--Slider main container-->
         <div class="swiper">
-            <!--Additional required wrapper-->
-        <div class="swiper-wrapper">
-            <!--Slides-->
-            <div class="swiper-slide"><img src="anne.jpg"
+           <!-- Additional required wrapper -->
+             <!-- If we need pagination -->
+             <div class="swiper-pagination"></div>
+
+             <div class="swiper-wrapper">
+              <!-- Slides -->
+          <div class="swiper-slide"><img src="anne.jpg"
                 alt="Livro sobre Anne"></div>
                 <div class="swiper-slide"><img src="fabricantedelagrimas.png.jpg"
-                alt="Fbricante de Lágrimas "></div>
+                alt="Fabricante de Lágrimas "></div>
                 <div class="swiper-slide"><img src="éassimqueacaba.png.jpg"
-                alt="Livro massa"></div>
-           </div>
+                alt="Livro É assim que acaba"></div>
              </div>
                <div class="swiper-slide">
                <img src="amorgela.jpg" alt="Amor Gelato" />
@@ -75,38 +94,36 @@
         </div>
           </div>
 
-<!-- If we need navigation buttons -->
+<!-- If we need pagination -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-</div>
-
-<div class="card">
-    <div class="card__descrição">
-      <div class="descrição">
-        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-        <h2 class="descrição__titulo-livro">Depois de você</h2>
-        <p class="descrição__texto">
+  <div class="card">
+    <div class="card__descricao">
+      <div class="descricao">
+        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+        <h2 class="descricao__titulo-livro">Depois de você</h2>
+        <p class="descricao__texto">
             Continuação do livro Como eu era antes de você, conta a história do relacionamento entre Will Traynor e Louisa Clark.
         </p>
       </div>
-      <img src="depois.png" class="descrição__imagem" />
+      <img src="depois.png" class="descricao__imagem" />
     </div>
-    <div class="card__botões">
-      <ul class="botões">
-        <li class="botões__item">
+    <div class="card__botoes">
+      <ul class="botoes">
+        <li class="botoes__item">
           <img src="favorito.png" alt="Favoritar livro" />
         </li>
-        <li class="botões__item">
+        <li class="botoes__item">
           <img src="comprar.png" alt="Adicionar no carrinho de compras" />
         </li>
       </ul>
-      <a href="#" class="botões__ancora">Saiba mais</a>
+      <a href="#" class="botoes__ancora">Saiba mais</a>
     </div>
   </div>
   
   <section class=”carrossel”>
-    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
     <div class="swiper">
       <!-- Additional required wrapper -->
       <!-- If we need pagination -->
@@ -131,55 +148,58 @@
  
      <div class="card">
        <!-- 1º linha -->
-       <div class="card__descrição">
+       <div class="card__descricao">
          <!-- 1º coluna -->
          <div class="descrição">
            <img src="avaliacao.png" alt="Avaliação 5 estrelas">
-           <h3 class="descrição__titulo">Autora do Mês</h3>
-           <h2 class="descrição__titulo-livro">Evelyn Oliveira Hey</h2>
-           <p class="descrição__texto">Estudante do Ensino Médio, autora dos livros mais vendidos do site todos de romance Infantojuvenil.
+           <h3 class="descricao__titulo">Autora do Mês</h3>
+           <h2 class="descricao__titulo-livro">Evelyn Oliveira Hey</h2>
+           <p class="descricao__texto">Estudante do Ensino Médio, autora dos livros mais vendidos do site todos de romance Infantojuvenil.
            </p>
          </div>
          <!-- 2º coluna -->
-         <img src="hey.png.jpg" class="descrição__imagem">
+         <img src="hey.png.jpg" class="descricao__imagem">
        </div>
         <!-- 2º linha -->
-      <div class="card__botões">
+      <div class="card__botoes">
         <!-- 1º coluna -->
-        <ul class="botões">
-          <li class="botões__item"><img src="favoritos.png" alt="Favoritar livro"></li>
-          <li class="botões__item"><img src="comprar.png" alt="Adicionar no carrinho de compras"></li>
+        <ul class="botoes">
+          <li class="botoes__item"><img src="favorito.png" alt="Favoritar livro"></li>
+          <li class="botoes__item"><img src="comprar.png" alt="Adicionar no carrinho de compras"></li>
         </ul>
         <!-- 2º coluna -->
-        <a href="#" class="botões__ancora">Saiba mais</a>
+        <a href="#" class="botoes__ancora">Saiba mais</a>
       </div>
     </div>
 </section>
 
-<section class="tópicos">
-  <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-  <ul class="tópicos__lista">
-    <li class="tópicos__item"><a href="#" class="tópicos__link"></a></li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">Romance Infantojuvenil</a>
+<section class="topicos">
+  <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+  <ul class="topicos__lista">
+   
+     <li class="topicos__item">
+      <a href="#" class="topicos__link">Romance Infantojuvenil</a>
     </li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">Jojo Moyes</a>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">Jojo Moyes</a>
     </li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">Drama</a>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">Drama</a>
     </li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">Comédia romântica</a>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">Comédia romântica</a>
     </li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">Romance com ficção científica</a>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">Romance com ficção científica</a>
     </li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">Evelyn Oliveira Hey</a>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">Evelyn Oliveira Hey</a>
     </li>
-    <li class="tópicos__item">
-      <a href="#" class="tópicos__link">A mecânica do amor</a>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">A mecânica do amor</a>
+    </li>
+    <li class="topicos__item">
+      <a href="#" class="topicos__link">Amor Gelato</a>
     </li>
   </ul>
 </section>
@@ -192,22 +212,6 @@
 </section>
 
 <hr />
-<footer class="rodapé">
-  <h2 class="rodapé__titulo">CLALYN</h2>
+<footer class="rodape">
+  <h2 class="rodape__titulo">CLALYN</h2>
 </footer>
-
-<script src=""></script>
-<script>
-  const swiper = new Swiper(".swiper", {
-    spaceBetween: 10,
-    slidesPerView: 3,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-    },
-  });
-</script>
-
-
-    </body>
-</html>
