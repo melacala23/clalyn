@@ -1,217 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLALYN livraria online</title>
+    <title>CLALYN Livraria</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
- const swiper = new Swiper('.swiper', {
-  spaceBetween: 10,
-    slidesPerView: 3,
-    pagination: { 
-      el: ".swiper-pagination",
-      type: "bullets",
-        },
-});
-</script>
-
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="container">
-        <input type="checkbox" id="menu" class="container_botao">
-        <Iabel for="menu">
-      <span class="cabecalho_menu-hamburguer container_imagem"></span>
-        </Iabel>
-      <img src="Clalyn.png" alt="Logo da CLALYN" class="container__imagem" />
-</div>
-</Iabel>
- <ul class="lista-menu">
-    <li class="lista-menu_titulo"> Categorias</li>
-    <li class="lista-menu-item">
-        <a href="#" class="lista-menu_link"> Infantojuvenil</a>
-    </li>
-    <li class="lista-menu_item">
-        <a href="#" class="lista-menu_link">Romântico</a>
-    </li>
-    <li class="lista-menu_item">
-        <a href="#" class="lista-menu_link">Comédia romântica</a>
-    </li>
-    <li class="lista-menu_item">
-        <a href="#" class="lista-menu_link">Romance dramático</a>
-    </li>
- </ul>
- <img src="" alt="" class="container_imagem">
-</div>
-<div class="container">
-    <a href="#"><img src="favorito.png" alt="Meus favoritos" class="container_imagem"></a>
-    <a href="#"><img src="comprar.png" alt="Carrinhos de compras" class="container_imagem"></a>
-    <a href="#"><img src="adicionar-usuario.png" alt="usuario" class="container_imagem"></a>
-</div>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infantojuvenil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romântico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Comédia romântica</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romace dramático</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia e romance</a>
+                </li>
+            </ul>
+            <img src="Clalyn(1).png" alt="Logo CLALYN" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">CLALYN</b>Livraria</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opções-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infantojuvenil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romântico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Comédia romântica</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romace dramático</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia romântica</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="favorito.png" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container-link">
+                <img src="comprar.png" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="adicionar-usuario.png" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
     </header>
     <section class="banner">
-        <h2 class="banner_titulo">Já sabe por onde começar?</h2>
-        <p class="banner_texto">Encontre em nossa estante livros para se apaixonar!</p>
-        <input type="search" class="banner_pesquisa"  placeholder="Qual será sua próxima leitura?">
+        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Encontre aqui livros para se apaixonar!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
-    <section class="corrossel">
-        <h2 class="carrossel__titulo">NOVOS LANÇAMENTOS</h2>
-        <!--Slider main container-->
-        <div class="swiper">
-           <!-- Additional required wrapper -->
-             <!-- If we need pagination -->
-             <div class="swiper-pagination"></div>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel-container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-             <div class="swiper-wrapper">
-              <!-- Slides -->
-          <div class="swiper-slide"><img src="anne.jpg"
-                alt="Livro sobre Anne"></div>
-                <div class="swiper-slide"><img src="fabricantedelagrimas.png.jpg"
-                alt="Fabricante de Lágrimas "></div>
-                <div class="swiper-slide"><img src="éassimqueacaba.png.jpg"
-                alt="Livro É assim que acaba"></div>
-             </div>
-               <div class="swiper-slide">
-               <img src="amorgela.jpg" alt="Amor Gelato" />
-               </div>
-                <div class="swiper-slide">
-            <img src="images.png" alt="Como eu era antes de você" />
-           </div>
-          <div class="swiper-slide">
-        <img src="tanta.png" alt="A garota que você deixou para trás" />
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="anne.jpg"
+                            alt="Livro Anne "></div>
+                    <div class="swiper-slide"><img src="fabricantedelagrimas.png.jpg"
+                            alt="Livro fabricante"></div>
+                    <div class="swiper-slide"><img src="éassimqueacaba.png.jpg"
+                            alt="Livro É assim que acaba"></div>
+                    <div class="swiper-slide"><img src="amorgela.png" alt="Amor gelato"></div>
+                    <div class="swiper-slide"><img src="images.png" alt="Como eu era antes de você"></div>
+                    <div class="swiper-slide"><img src="tanta.png" alt="A garota que você deixou para trás"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!-- 1º coluna -->
+                    <div class="descricoo">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Depois de você</h2>
+                        <p class="descricao__texto">Quando uma história termina, outra tem que começar.Com mais de 5 milhões de exemplares vendidos em todo o mundo, Como eu era antes de você conta a história do relacionamento entre Will Traynor e Louisa Clark, cujo fim trágico deixou de coração apertado os milhares de fãs da autora Jojo Moyes.Em Depois de você, Lou ainda não superou a perda de Will. Morando em um flat em Londres, ela trabalha como garçonete em um pub no aeroporto. </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="depois.png" class="descricao__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botoes__item"><img src="favorito.png" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="comprar.png" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
         </div>
-          </div>
+    </section>
 
-<!-- If we need pagination -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-  <div class="card">
-    <div class="card__descricao">
-      <div class="descricao">
-        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-        <h2 class="descricao__titulo-livro">Depois de você</h2>
-        <p class="descricao__texto">
-            Continuação do livro Como eu era antes de você, conta a história do relacionamento entre Will Traynor e Louisa Clark.
-        </p>
-      </div>
-      <img src="depois.png" class="descricao__imagem" />
-    </div>
-    <div class="card__botoes">
-      <ul class="botoes">
-        <li class="botoes__item">
-          <img src="favorito.png" alt="Favoritar livro" />
-        </li>
-        <li class="botoes__item">
-          <img src="comprar.png" alt="Adicionar no carrinho de compras" />
-        </li>
-      </ul>
-      <a href="#" class="botoes__ancora">Saiba mais</a>
-    </div>
-  </div>
-  
-  <section class=”carrossel”>
-    <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="dom.png"
+                            alt="Dom Casmurro"></div>
+                    <div class="swiper-slide"><img src="vermelho.png"
+                            alt="Vermelho branco e sangue azul"></div>
+                    <div class="swiper-slide"><img src="amigos.png"
+                            alt="Mais que amigos"></div>
+                    <div class="swiper-slide"><img src="mecanica.png" alt="Mecânica do coração"></div>
+                    <div class="swiper-slide"><img src="cupido.png" alt="Eu cupido"></div>
+                    <div class="swiper-slide"><img src="dia.png" alt="Um dia "></div>
+                </div>
 
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="dom.png"
-            alt="Dom Camurro"></div>
-        <div class="swiper-slide"><img src="vermelho.png" alt="Vermelho branco e sangue azul">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!-- 1º coluna -->
+                    <div class="descricao">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descricao__titulo">Autora do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Caroline de Farias Alves</h2>
+                        <p class="descricao__texto">Professora de Matemática, especilista em Jogos e Gamificações.                    </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img carol/unnamed.jpg" class="descricao__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1º coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide"><img src="amigos.png" alt="Mais que amigos?">
-        </div>
-        <div class="swiper-slide"><img src="mecanica.png" alt="A mecânica do amor"></div>
-        <div class="swiper-slide"><img src="cupido.png" alt="Eu cupido"></div>
-        <div class="swiper-slide"><img src="dia.png" alt="Um dia"></div>
-      </div>
-       <!-- If we need navigation buttons -->
-       <div class="swiper-button-prev"></div>
-       <div class="swiper-button-next"></div>
-     </div>
- 
-     <div class="card">
-       <!-- 1º linha -->
-       <div class="card__descricao">
-         <!-- 1º coluna -->
-         <div class="descrição">
-           <img src="avaliacao.png" alt="Avaliação 5 estrelas">
-           <h3 class="descricao__titulo">Autora do Mês</h3>
-           <h2 class="descricao__titulo-livro">Evelyn Oliveira Hey</h2>
-           <p class="descricao__texto">Estudante do Ensino Médio, autora dos livros mais vendidos do site todos de romance Infantojuvenil.
-           </p>
-         </div>
-         <!-- 2º coluna -->
-         <img src="hey.png.jpg" class="descricao__imagem">
-       </div>
-        <!-- 2º linha -->
-      <div class="card__botoes">
-        <!-- 1º coluna -->
-        <ul class="botoes">
-          <li class="botoes__item"><img src="favorito.png" alt="Favoritar livro"></li>
-          <li class="botoes__item"><img src="comprar.png" alt="Adicionar no carrinho de compras"></li>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Equação</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Matriz</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Lógica</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Cálculo</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Jogos</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Modelagem</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Código Binario</a>
+            </li>
+            
         </ul>
-        <!-- 2º coluna -->
-        <a href="#" class="botoes__ancora">Saiba mais</a>
-      </div>
-    </div>
-</section>
+    </section>
 
-<section class="topicos">
-  <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-  <ul class="topicos__lista">
-   
-     <li class="topicos__item">
-      <a href="#" class="topicos__link">Romance Infantojuvenil</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">Jojo Moyes</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">Drama</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">Comédia romântica</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">Romance com ficção científica</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">Evelyn Oliveira Hey</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">A mecânica do amor</a>
-    </li>
-    <li class="topicos__item">
-      <a href="#" class="topicos__link">Amor Gelato</a>
-    </li>
-  </ul>
-</section>
-<section class="contato">
-  <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-  <p class="contato__texto">
-    Atualizações de e-books, novos livros, promoções e outros.
-  </p>
-  <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
-</section>
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
 
-<hr />
-<footer class="rodape">
-  <h2 class="rodape__titulo">CLALYN</h2>
-</footer>
+    <hr />
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Ana Vanda</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação</li>
+            <li class="lista-rodape__item">
+                <img src="img/CasaDoCodigo.svg" alt="Logo da casa do codigo">
+                <a href="#" class="lista-rodape__link">Casa do código</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/Caelum.svg" alt="Logo da caelum">
+                <a href="#" class="lista-rodape__link">Caelum</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação online</li>
+            <li class="lista-rodape__item">
+                <img src="img/Alura.svg" alt="Logo da Alura">
+                <a href="#" class="lista-rodape__link">Alura</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
+                <a href="#" class="lista-rodape__link">Alura para Empresas</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
+                <a href="#" class="lista-rodape__link">Alura LATAM</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/AluraStart.svg" alt="Logo da Alura START">
+                <a href="#" class="lista-rodape__link">Alura Start</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/MusicDot.svg" alt="Logo da Music Dot">
+                <a href="#" class="lista-rodape__link">Music Dot</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
+                <a href="#" class="lista-rodape__link">Alura Lingua</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/PM3.svg" alt="Logo da PM3">
+                <a href="#" class="lista-rodape__link">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Comunidade</li>
+            <li class="lista-rodape__item">
+                <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech">
+                <a href="#" class="lista-rodape__link">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
+                <a href="#" class="lista-rodape__link">Scuba Dev</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
+                <a href="#" class="lista-rodape__link">Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
+                <a href="#" class="lista-rodape__link">Like a Boss</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras">
+                <a href="#" class="lista-rodape__link">Carreira sem fronteiras</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
+                <a href="#" class="lista-rodape__link">Hipsters ponto jobs</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/GUJ.svg" alt="Logo do GUJ">
+                <a href="#" class="lista-rodape__link">GUJ</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
