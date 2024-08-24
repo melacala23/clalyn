@@ -9,7 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination:{
+        el: ".swiper-pagination",
+      type: "bullets",
+      },
+    });
+  </script>
 </head>
 
 <body>
@@ -173,21 +189,21 @@
                 <div class="card__descricao">
                     <!-- 1º coluna -->
                     <div class="descricao">
-                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <img src="avaliacao.png" alt="Avaliação 5 estrelas">
                         <h3 class="descricao__titulo">Autora do Mês</h3>
-                        <h2 class="descricao__titulo-livro">Caroline de Farias Alves</h2>
-                        <p class="descricao__texto">Professora de Matemática, especilista em Jogos e Gamificações.                    </p>
+                        <h2 class="descricao__titulo-livro">Evelyn Oliveira Hey</h2>
+                        <p class="descricao__texto">Estudante do Ensino Médio, autora dos livros mais vendidos do site todos de romance infantojuvenil.                    </p>
                     </div>
                     <!-- 2º coluna -->
-                    <img src="img carol/unnamed.jpg" class="descricao__imagem">
+                    <img src="hey.png.jpg" class="descricao__imagem">
                 </div>
 
                 <!-- 2º linha -->
                 <div class="card__botoes">
                     <!-- 1º coluna -->
                     <ul class="botoes">
-                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                        <li class="botoes__item"><img src="favorito.png" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="comprar.png" alt="Adicionar no carrinho de compras"></li>
                     </ul>
                     <!-- 2º coluna -->
                     <a href="#" class="botoes__ancora">Saiba mais</a>
@@ -200,25 +216,25 @@
         <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
         <ul class="topicos__lista">
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Equação</a>
+                <a href="#" class="topicos__link">Romace infantojuvenil/a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Matriz</a>
+                <a href="#" class="topicos__link">Jojo Moyes</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Lógica</a>
+                <a href="#" class="topicos__link">Drama</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Cálculo</a>
+                <a href="#" class="topicos__link">Fantasia romântica</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Jogos</a>
+                <a href="#" class="topicos__link">Evelyn Oliveira Hey</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Modelagem</a>
+                <a href="#" class="topicos__link">A Mecânica do amor</a>
             </li>
             <li class="topicos__item">
-                <a href="#" class="topicos__link">Código Binario</a>
+                <a href="#" class="topicos__link">Amor gelato</a>
             </li>
             
         </ul>
@@ -227,15 +243,16 @@
     <section class="contato">
         <div class="contato__descricao">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <p class="contato__texto">Novos livros, lançamentos promoções e outros.</p>
         </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
     <hr />
+>>>>>>> 915c730f748da243e655eed7632bfa5808e94aa9
 
     <footer class="rodape">
-        <h2 class="rodape__titulo">Grupo Ana Vanda</h2>
+        <h2 class="rodape__titulo">CLALYNlivraria</h2>
         <ul class="lista-rodape">
             <li class="lista-rodape__titulo">Educação</li>
             <li class="lista-rodape__item">
