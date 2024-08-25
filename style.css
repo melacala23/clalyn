@@ -1,14 +1,14 @@
 :root {
-    --cor-de-fundo: #ea9ad9;
+    --cor-de-fundo: #FFB6C1;
     --branco: #FFFFFF;
-    --laranja: #022508;
-    --azul-degrade: linear-gradient(97.54deg, #034405 35.49%, #12e219 165.37%);
-    --fonte-principal: "Poppins";
-    --azul: #0fc2c2;
-    --fonte-secundario: "Josefin Sans";
+    --laranja: #9badae;
+    --azul-degrade: linear-gradient(97.54deg, #C08081 35.49%, #FAF0E6 165.37%);
+    --fonte-principal: "Moderustic";
+    --azul: #DC143C;
+    --fonte-secundario: "Moderustic";
     --preto: #000000;
-    --cinza: #474646;
-    --cinza-claro: #858585;
+    --cinza: PLUM ;
+    --cinza-claro: #A52A2A;
 }
 
 body {
@@ -21,14 +21,14 @@ body {
 .cabecalho__menu-hamburguer {
     width: 24px ;
     height: 24px;
-    background-image: url("../img/Menu.svg");
+    background-image: url("cardapio.png");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
 
 .container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
-    background-image: url("../img/Menu Aberto.svg");
+    background-image: url("menu-aberto.png");
 }
 
 .container__botao:checked~.container__rotulo {
@@ -50,7 +50,7 @@ body {
 
 .container__imagem {
     padding: 1em;
-    width: 13%;
+    width: 25%;
 }
 
 .lista-menu {
@@ -68,6 +68,7 @@ body {
 .lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
+    list-style-type: none;
 }
 
 .lista-menu__titulo {
@@ -118,6 +119,7 @@ body {
 
     .opcoes {
         display: flex;
+        list-style-type: none;
     }
 
     .opcoes__item {
@@ -221,7 +223,7 @@ body {
     font-weight: 400;
     text-align: center;
     color: var(--branco);
-    background: url("../img/Lupa.svg") no-repeat;
+    background: url("lupa-arredondada.png") no-repeat;
     background-position: 1em;
 }
 
@@ -278,7 +280,7 @@ body {
 
 .swiper-pagination {
     position: initial;
-    margin: .5em 0;
+    margin: 0.5em 0;
 }
 
 .card__descricao {
@@ -315,13 +317,16 @@ body {
     font-weight: 700;
     margin: 0.5em 0;
 }
-
 .descricao__texto {
     font-size: 14px;
+}
+.descricao__imagem{
+    width: 40%;
 }
 
 .botoes__item {
     margin: 0 0.5em;
+    list-style-type: none;
 }
 
 .botoes__ancora {
@@ -390,6 +395,19 @@ body {
     }
 
 }
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("envelope.png") no-repeat;
+    padding-left: 2em;
+  }
 
 hr {
     margin: 0;
@@ -467,6 +485,7 @@ hr {
 
 .topicos__item {
     margin: 2em 0.5em;
+    list-style-type: none;
 }
 
 .topicos__link {
