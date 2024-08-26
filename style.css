@@ -18,7 +18,7 @@ body {
     font-weight: 400;
 }
 
-.cabecalho__menu-hamburguer {
+.cabeçalho__menu-hamburguer {
     width: 24px ;
     height: 24px;
     background-image: url("cardapio.png");
@@ -27,7 +27,7 @@ body {
     display: inline-block;
 }
 
-.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
+.container__botao:checked ~.container__rotulo>.cabecalho__menu-hamburguer {
     background-image: url("menu-aberto.png");
 }
 
@@ -198,17 +198,17 @@ body {
     padding: 2.5em 2em;
 }
 
-.banner__titulo {
-    font-size: 18px;
+.banner-titulo {
+    font-size: 25px;
     font-weight: 700;
 }
 
-.banner__texto {
+.banner-texto {
     font-weight: 500;
     margin: 1em 0;
 }
 
-.banner__pesquisa {
+.banner-pesquisa {
     background-color: transparent;
     border: 1px solid var(--branco);
     color: var(--branco);
@@ -217,7 +217,7 @@ body {
     width: 100%;
 }
 
-.banner__pesquisa::placeholder {
+.banner-pesquisa::placeholder {
     font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 400;
@@ -395,6 +395,25 @@ body {
     }
 
 }
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+  }
+  .contato__titulo,
+.contato__texto {
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+  }
 .contato__email {
     padding: 1em;
     border: 1px solid var(--azul);
